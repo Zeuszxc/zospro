@@ -46,6 +46,8 @@
             this.SaveButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.PreRequisiteRadioButton = new System.Windows.Forms.RadioButton();
+            this.CoRequisiteRadioButton = new System.Windows.Forms.RadioButton();
             this.RequisiteTextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.SubjectDataGridView = new System.Windows.Forms.DataGridView();
@@ -53,9 +55,8 @@
             this.DescriptionColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UnitsColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CoPreColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PreRequisiteRadioButton = new System.Windows.Forms.RadioButton();
-            this.CoRequisiteRadioButton = new System.Windows.Forms.RadioButton();
             this.NextButton = new System.Windows.Forms.Button();
+            this.BackButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SubjectDataGridView)).BeginInit();
@@ -256,6 +257,28 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Requisite Information";
             // 
+            // PreRequisiteRadioButton
+            // 
+            this.PreRequisiteRadioButton.AutoSize = true;
+            this.PreRequisiteRadioButton.Location = new System.Drawing.Point(344, 19);
+            this.PreRequisiteRadioButton.Name = "PreRequisiteRadioButton";
+            this.PreRequisiteRadioButton.Size = new System.Drawing.Size(83, 17);
+            this.PreRequisiteRadioButton.TabIndex = 17;
+            this.PreRequisiteRadioButton.TabStop = true;
+            this.PreRequisiteRadioButton.Text = "Pre-requisite";
+            this.PreRequisiteRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // CoRequisiteRadioButton
+            // 
+            this.CoRequisiteRadioButton.AutoSize = true;
+            this.CoRequisiteRadioButton.Location = new System.Drawing.Point(344, 42);
+            this.CoRequisiteRadioButton.Name = "CoRequisiteRadioButton";
+            this.CoRequisiteRadioButton.Size = new System.Drawing.Size(80, 17);
+            this.CoRequisiteRadioButton.TabIndex = 18;
+            this.CoRequisiteRadioButton.TabStop = true;
+            this.CoRequisiteRadioButton.Text = "Co-requisite";
+            this.CoRequisiteRadioButton.UseVisualStyleBackColor = true;
+            // 
             // RequisiteTextBox
             // 
             this.RequisiteTextBox.Location = new System.Drawing.Point(142, 26);
@@ -313,42 +336,30 @@
             this.CoPreColumn.Name = "CoPreColumn";
             this.CoPreColumn.ReadOnly = true;
             // 
-            // PreRequisiteRadioButton
-            // 
-            this.PreRequisiteRadioButton.AutoSize = true;
-            this.PreRequisiteRadioButton.Location = new System.Drawing.Point(344, 19);
-            this.PreRequisiteRadioButton.Name = "PreRequisiteRadioButton";
-            this.PreRequisiteRadioButton.Size = new System.Drawing.Size(83, 17);
-            this.PreRequisiteRadioButton.TabIndex = 17;
-            this.PreRequisiteRadioButton.TabStop = true;
-            this.PreRequisiteRadioButton.Text = "Pre-requisite";
-            this.PreRequisiteRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // CoRequisiteRadioButton
-            // 
-            this.CoRequisiteRadioButton.AutoSize = true;
-            this.CoRequisiteRadioButton.Location = new System.Drawing.Point(344, 42);
-            this.CoRequisiteRadioButton.Name = "CoRequisiteRadioButton";
-            this.CoRequisiteRadioButton.Size = new System.Drawing.Size(80, 17);
-            this.CoRequisiteRadioButton.TabIndex = 18;
-            this.CoRequisiteRadioButton.TabStop = true;
-            this.CoRequisiteRadioButton.Text = "Co-requisite";
-            this.CoRequisiteRadioButton.UseVisualStyleBackColor = true;
-            // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(610, 211);
+            this.NextButton.Location = new System.Drawing.Point(713, 414);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(75, 25);
             this.NextButton.TabIndex = 17;
             this.NextButton.Text = "&Next";
             this.NextButton.UseVisualStyleBackColor = true;
             // 
+            // BackButton
+            // 
+            this.BackButton.Location = new System.Drawing.Point(626, 415);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(75, 23);
+            this.BackButton.TabIndex = 18;
+            this.BackButton.Text = "&Back";
+            this.BackButton.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.ClearButton);
@@ -395,6 +406,7 @@
         private System.Windows.Forms.RadioButton PreRequisiteRadioButton;
         private System.Windows.Forms.RadioButton CoRequisiteRadioButton;
         private System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.Button BackButton;
     }
 }
 
