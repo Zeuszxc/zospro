@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.SubjectEDPCodeTextBox = new System.Windows.Forms.TextBox();
-            this.SubjectCodeTextBox = new System.Windows.Forms.TextBox();
-            this.TimeStartTextBox = new System.Windows.Forms.TextBox();
-            this.TimeEndTextBox = new System.Windows.Forms.TextBox();
-            this.DaysTextBox = new System.Windows.Forms.TextBox();
-            this.SectionTextBox = new System.Windows.Forms.TextBox();
-            this.RoomTextBox = new System.Windows.Forms.TextBox();
-            this.SchoolYearTextBox = new System.Windows.Forms.TextBox();
-            this.AMPMComboBox = new System.Windows.Forms.ComboBox();
-            this.DescriptionLabel = new System.Windows.Forms.Label();
-            this.SaveButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
+            this.SaveButton = new System.Windows.Forms.Button();
+            this.DescriptionLabel = new System.Windows.Forms.Label();
+            this.AMPMComboBox = new System.Windows.Forms.ComboBox();
+            this.SchoolYearTextBox = new System.Windows.Forms.TextBox();
+            this.RoomTextBox = new System.Windows.Forms.TextBox();
+            this.SectionTextBox = new System.Windows.Forms.TextBox();
+            this.DaysTextBox = new System.Windows.Forms.TextBox();
+            this.TimeEndTextBox = new System.Windows.Forms.TextBox();
+            this.TimeStartTextBox = new System.Windows.Forms.TextBox();
+            this.SubjectCodeTextBox = new System.Windows.Forms.TextBox();
+            this.SubjectEDPCodeTextBox = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,86 +85,96 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Subject Schedule Entry";
             // 
-            // label1
+            // ClearButton
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 56);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Subject EDP Code:";
+            this.ClearButton.Location = new System.Drawing.Point(308, 267);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(77, 32);
+            this.ClearButton.TabIndex = 22;
+            this.ClearButton.Text = "&Clear";
+            this.ClearButton.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // SaveButton
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(37, 90);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Subject Code:";
+            this.SaveButton.Location = new System.Drawing.Point(208, 267);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(77, 32);
+            this.SaveButton.TabIndex = 21;
+            this.SaveButton.Text = "&Save";
+            this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
-            // label3
+            // DescriptionLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(51, 130);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Description";
+            this.DescriptionLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DescriptionLabel.Location = new System.Drawing.Point(117, 127);
+            this.DescriptionLabel.Name = "DescriptionLabel";
+            this.DescriptionLabel.Size = new System.Drawing.Size(112, 20);
+            this.DescriptionLabel.TabIndex = 20;
             // 
-            // label4
+            // AMPMComboBox
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(53, 162);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Time Start:";
+            this.AMPMComboBox.FormattingEnabled = true;
+            this.AMPMComboBox.Location = new System.Drawing.Point(391, 191);
+            this.AMPMComboBox.Name = "AMPMComboBox";
+            this.AMPMComboBox.Size = new System.Drawing.Size(121, 21);
+            this.AMPMComboBox.TabIndex = 19;
             // 
-            // label5
+            // SchoolYearTextBox
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(59, 194);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Time End:";
+            this.SchoolYearTextBox.Location = new System.Drawing.Point(391, 159);
+            this.SchoolYearTextBox.Name = "SchoolYearTextBox";
+            this.SchoolYearTextBox.Size = new System.Drawing.Size(100, 20);
+            this.SchoolYearTextBox.TabIndex = 18;
             // 
-            // label6
+            // RoomTextBox
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(351, 59);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(34, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Days:";
+            this.RoomTextBox.Location = new System.Drawing.Point(391, 127);
+            this.RoomTextBox.Name = "RoomTextBox";
+            this.RoomTextBox.Size = new System.Drawing.Size(100, 20);
+            this.RoomTextBox.TabIndex = 17;
             // 
-            // label7
+            // SectionTextBox
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(342, 93);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Section:";
+            this.SectionTextBox.Location = new System.Drawing.Point(391, 90);
+            this.SectionTextBox.Name = "SectionTextBox";
+            this.SectionTextBox.Size = new System.Drawing.Size(100, 20);
+            this.SectionTextBox.TabIndex = 16;
             // 
-            // label8
+            // DaysTextBox
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(350, 130);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 13);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Room:";
+            this.DaysTextBox.Location = new System.Drawing.Point(391, 56);
+            this.DaysTextBox.Name = "DaysTextBox";
+            this.DaysTextBox.Size = new System.Drawing.Size(100, 20);
+            this.DaysTextBox.TabIndex = 15;
             // 
-            // label9
+            // TimeEndTextBox
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(320, 162);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 13);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "School Year:";
+            this.TimeEndTextBox.Location = new System.Drawing.Point(117, 191);
+            this.TimeEndTextBox.Name = "TimeEndTextBox";
+            this.TimeEndTextBox.Size = new System.Drawing.Size(100, 20);
+            this.TimeEndTextBox.TabIndex = 14;
+            // 
+            // TimeStartTextBox
+            // 
+            this.TimeStartTextBox.Location = new System.Drawing.Point(117, 159);
+            this.TimeStartTextBox.Name = "TimeStartTextBox";
+            this.TimeStartTextBox.Size = new System.Drawing.Size(100, 20);
+            this.TimeStartTextBox.TabIndex = 13;
+            // 
+            // SubjectCodeTextBox
+            // 
+            this.SubjectCodeTextBox.Location = new System.Drawing.Point(117, 87);
+            this.SubjectCodeTextBox.Name = "SubjectCodeTextBox";
+            this.SubjectCodeTextBox.Size = new System.Drawing.Size(100, 20);
+            this.SubjectCodeTextBox.TabIndex = 11;
+            // 
+            // SubjectEDPCodeTextBox
+            // 
+            this.SubjectEDPCodeTextBox.Location = new System.Drawing.Point(117, 51);
+            this.SubjectEDPCodeTextBox.Name = "SubjectEDPCodeTextBox";
+            this.SubjectEDPCodeTextBox.Size = new System.Drawing.Size(100, 20);
+            this.SubjectEDPCodeTextBox.TabIndex = 10;
             // 
             // label10
             // 
@@ -175,95 +185,86 @@
             this.label10.TabIndex = 9;
             this.label10.Text = "AM/PM:";
             // 
-            // SubjectEDPCodeTextBox
+            // label9
             // 
-            this.SubjectEDPCodeTextBox.Location = new System.Drawing.Point(117, 51);
-            this.SubjectEDPCodeTextBox.Name = "SubjectEDPCodeTextBox";
-            this.SubjectEDPCodeTextBox.Size = new System.Drawing.Size(100, 20);
-            this.SubjectEDPCodeTextBox.TabIndex = 10;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(320, 162);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(68, 13);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "School Year:";
             // 
-            // SubjectCodeTextBox
+            // label8
             // 
-            this.SubjectCodeTextBox.Location = new System.Drawing.Point(117, 87);
-            this.SubjectCodeTextBox.Name = "SubjectCodeTextBox";
-            this.SubjectCodeTextBox.Size = new System.Drawing.Size(100, 20);
-            this.SubjectCodeTextBox.TabIndex = 11;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(350, 130);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(38, 13);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Room:";
             // 
-            // TimeStartTextBox
+            // label7
             // 
-            this.TimeStartTextBox.Location = new System.Drawing.Point(117, 159);
-            this.TimeStartTextBox.Name = "TimeStartTextBox";
-            this.TimeStartTextBox.Size = new System.Drawing.Size(100, 20);
-            this.TimeStartTextBox.TabIndex = 13;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(342, 93);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 13);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Section:";
             // 
-            // TimeEndTextBox
+            // label6
             // 
-            this.TimeEndTextBox.Location = new System.Drawing.Point(117, 191);
-            this.TimeEndTextBox.Name = "TimeEndTextBox";
-            this.TimeEndTextBox.Size = new System.Drawing.Size(100, 20);
-            this.TimeEndTextBox.TabIndex = 14;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(351, 59);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(34, 13);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Days:";
             // 
-            // DaysTextBox
+            // label5
             // 
-            this.DaysTextBox.Location = new System.Drawing.Point(391, 56);
-            this.DaysTextBox.Name = "DaysTextBox";
-            this.DaysTextBox.Size = new System.Drawing.Size(100, 20);
-            this.DaysTextBox.TabIndex = 15;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(59, 194);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Time End:";
             // 
-            // SectionTextBox
+            // label4
             // 
-            this.SectionTextBox.Location = new System.Drawing.Point(391, 90);
-            this.SectionTextBox.Name = "SectionTextBox";
-            this.SectionTextBox.Size = new System.Drawing.Size(100, 20);
-            this.SectionTextBox.TabIndex = 16;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(53, 162);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Time Start:";
             // 
-            // RoomTextBox
+            // label3
             // 
-            this.RoomTextBox.Location = new System.Drawing.Point(391, 127);
-            this.RoomTextBox.Name = "RoomTextBox";
-            this.RoomTextBox.Size = new System.Drawing.Size(100, 20);
-            this.RoomTextBox.TabIndex = 17;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(51, 130);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Description";
             // 
-            // SchoolYearTextBox
+            // label2
             // 
-            this.SchoolYearTextBox.Location = new System.Drawing.Point(391, 159);
-            this.SchoolYearTextBox.Name = "SchoolYearTextBox";
-            this.SchoolYearTextBox.Size = new System.Drawing.Size(100, 20);
-            this.SchoolYearTextBox.TabIndex = 18;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(37, 90);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Subject Code:";
             // 
-            // AMPMComboBox
+            // label1
             // 
-            this.AMPMComboBox.FormattingEnabled = true;
-            this.AMPMComboBox.Location = new System.Drawing.Point(391, 191);
-            this.AMPMComboBox.Name = "AMPMComboBox";
-            this.AMPMComboBox.Size = new System.Drawing.Size(121, 21);
-            this.AMPMComboBox.TabIndex = 19;
-            // 
-            // DescriptionLabel
-            // 
-            this.DescriptionLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DescriptionLabel.Location = new System.Drawing.Point(117, 127);
-            this.DescriptionLabel.Name = "DescriptionLabel";
-            this.DescriptionLabel.Size = new System.Drawing.Size(112, 20);
-            this.DescriptionLabel.TabIndex = 20;
-            // 
-            // SaveButton
-            // 
-            this.SaveButton.Location = new System.Drawing.Point(208, 267);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(77, 32);
-            this.SaveButton.TabIndex = 21;
-            this.SaveButton.Text = "&Save";
-            this.SaveButton.UseVisualStyleBackColor = true;
-            // 
-            // ClearButton
-            // 
-            this.ClearButton.Location = new System.Drawing.Point(308, 267);
-            this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(77, 32);
-            this.ClearButton.TabIndex = 22;
-            this.ClearButton.Text = "&Clear";
-            this.ClearButton.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(15, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Subject EDP Code:";
             // 
             // SubjectScheduleEntry
             // 

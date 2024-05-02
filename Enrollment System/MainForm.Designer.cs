@@ -35,7 +35,7 @@
             // 
             // SubjectEntryButton
             // 
-            this.SubjectEntryButton.Location = new System.Drawing.Point(257, 67);
+            this.SubjectEntryButton.Location = new System.Drawing.Point(281, 73);
             this.SubjectEntryButton.Name = "SubjectEntryButton";
             this.SubjectEntryButton.Size = new System.Drawing.Size(210, 55);
             this.SubjectEntryButton.TabIndex = 0;
@@ -45,7 +45,7 @@
             // 
             // SubjectScheduleEntryButton
             // 
-            this.SubjectScheduleEntryButton.Location = new System.Drawing.Point(257, 155);
+            this.SubjectScheduleEntryButton.Location = new System.Drawing.Point(281, 161);
             this.SubjectScheduleEntryButton.Name = "SubjectScheduleEntryButton";
             this.SubjectScheduleEntryButton.Size = new System.Drawing.Size(210, 55);
             this.SubjectScheduleEntryButton.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             // StudentEnrollmentEntryButton
             // 
-            this.StudentEnrollmentEntryButton.Location = new System.Drawing.Point(257, 247);
+            this.StudentEnrollmentEntryButton.Location = new System.Drawing.Point(281, 253);
             this.StudentEnrollmentEntryButton.Name = "StudentEnrollmentEntryButton";
             this.StudentEnrollmentEntryButton.Size = new System.Drawing.Size(210, 55);
             this.StudentEnrollmentEntryButton.TabIndex = 2;

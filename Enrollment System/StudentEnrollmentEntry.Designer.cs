@@ -50,6 +50,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.TotalUnitsTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.BackButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -191,7 +192,7 @@
             // 
             // EncodedByTextBox
             // 
-            this.EncodedByTextBox.Location = new System.Drawing.Point(92, 367);
+            this.EncodedByTextBox.Location = new System.Drawing.Point(92, 355);
             this.EncodedByTextBox.Multiline = true;
             this.EncodedByTextBox.Name = "EncodedByTextBox";
             this.EncodedByTextBox.Size = new System.Drawing.Size(148, 20);
@@ -200,7 +201,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 370);
+            this.label6.Location = new System.Drawing.Point(18, 358);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 13);
             this.label6.TabIndex = 11;
@@ -208,7 +209,7 @@
             // 
             // TotalUnitsTextBox
             // 
-            this.TotalUnitsTextBox.Location = new System.Drawing.Point(641, 367);
+            this.TotalUnitsTextBox.Location = new System.Drawing.Point(618, 352);
             this.TotalUnitsTextBox.Multiline = true;
             this.TotalUnitsTextBox.Name = "TotalUnitsTextBox";
             this.TotalUnitsTextBox.Size = new System.Drawing.Size(106, 20);
@@ -217,17 +218,27 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(577, 370);
+            this.label7.Location = new System.Drawing.Point(554, 355);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(61, 13);
             this.label7.TabIndex = 13;
             this.label7.Text = "Total Units:";
+            // 
+            // BackButton
+            // 
+            this.BackButton.Location = new System.Drawing.Point(718, 413);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(70, 25);
+            this.BackButton.TabIndex = 15;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = true;
             // 
             // StudentEnrollmentEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.TotalUnitsTextBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.EncodedByTextBox);
@@ -275,5 +286,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TotalUnitsTextBox;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button BackButton;
     }
 }
