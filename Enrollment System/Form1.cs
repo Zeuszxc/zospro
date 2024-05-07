@@ -18,7 +18,7 @@ namespace Enrollment_System
             InitializeComponent();
         }
 
-        string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\Server2\second semester 2023-2024\LAB802\79866_CC_APPSDEV22_1200_0130_PM_TTH\79866-23232127\Desktop\FINALS\Caballes.accdb";
+        string connectionString = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = \\Server2\second semester 2023-2024\LAB802\79866_CC_APPSDEV22_1200_0130_PM_TTH\79866-23232127\Desktop\FINALS\Enrollment System\Caballes.accdb";
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
