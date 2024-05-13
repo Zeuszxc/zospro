@@ -16,5 +16,12 @@ namespace Enrollment_System
         {
             InitializeComponent();
         }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            SubjectScheduleEntry subjectScheduleEntry = new SubjectScheduleEntry();
+            subjectScheduleEntry.Show();
+            this.Hide();
+        }
     }
 }

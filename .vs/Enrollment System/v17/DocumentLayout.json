@@ -1,0 +1,152 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\APPSDEV\\zospro\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|e:\\appsdev\\zospro\\enrollment system\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|solutionrelative:enrollment system\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|E:\\APPSDEV\\zospro\\enrollment system\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|solutionrelative:enrollment system\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|E:\\APPSDEV\\zospro\\enrollment system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|solutionrelative:enrollment system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|E:\\APPSDEV\\zospro\\enrollment system\\subjectscheduleentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|solutionrelative:enrollment system\\subjectscheduleentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|E:\\APPSDEV\\zospro\\enrollment system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|solutionrelative:enrollment system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|E:\\APPSDEV\\zospro\\enrollment system\\subjectscheduleentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|solutionrelative:enrollment system\\subjectscheduleentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|E:\\APPSDEV\\zospro\\enrollment system\\studentenrollmententry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|solutionrelative:enrollment system\\studentenrollmententry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|E:\\APPSDEV\\zospro\\enrollment system\\studentenrollmententry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|solutionrelative:enrollment system\\studentenrollmententry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentEnrollmentEntry.cs",
+              "DocumentMoniker": "E:\\APPSDEV\\zospro\\Enrollment System\\StudentEnrollmentEntry.cs",
+              "RelativeDocumentMoniker": "Enrollment System\\StudentEnrollmentEntry.cs",
+              "ToolTip": "E:\\APPSDEV\\zospro\\Enrollment System\\StudentEnrollmentEntry.cs",
+              "RelativeToolTip": "Enrollment System\\StudentEnrollmentEntry.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T13:38:23.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "E:\\APPSDEV\\zospro\\Enrollment System\\MainForm.cs",
+              "RelativeDocumentMoniker": "Enrollment System\\MainForm.cs",
+              "ToolTip": "E:\\APPSDEV\\zospro\\Enrollment System\\MainForm.cs",
+              "RelativeToolTip": "Enrollment System\\MainForm.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAiwBYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T10:45:01.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\APPSDEV\\zospro\\Enrollment System\\Form1.cs",
+              "RelativeDocumentMoniker": "Enrollment System\\Form1.cs",
+              "ToolTip": "E:\\APPSDEV\\zospro\\Enrollment System\\Form1.cs",
+              "RelativeToolTip": "Enrollment System\\Form1.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAIwBYAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T08:37:12.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SubjectScheduleEntry.cs",
+              "DocumentMoniker": "E:\\APPSDEV\\zospro\\Enrollment System\\SubjectScheduleEntry.cs",
+              "RelativeDocumentMoniker": "Enrollment System\\SubjectScheduleEntry.cs",
+              "ToolTip": "E:\\APPSDEV\\zospro\\Enrollment System\\SubjectScheduleEntry.cs",
+              "RelativeToolTip": "Enrollment System\\SubjectScheduleEntry.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAwDkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T08:11:46.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\APPSDEV\\zospro\\Enrollment System\\Form1.cs",
+              "RelativeDocumentMoniker": "Enrollment System\\Form1.cs",
+              "ToolTip": "E:\\APPSDEV\\zospro\\Enrollment System\\Form1.cs [Design]",
+              "RelativeToolTip": "Enrollment System\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T08:11:14.311Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SubjectScheduleEntry.cs [Design]",
+              "DocumentMoniker": "E:\\APPSDEV\\zospro\\Enrollment System\\SubjectScheduleEntry.cs",
+              "RelativeDocumentMoniker": "Enrollment System\\SubjectScheduleEntry.cs",
+              "ToolTip": "E:\\APPSDEV\\zospro\\Enrollment System\\SubjectScheduleEntry.cs [Design]",
+              "RelativeToolTip": "Enrollment System\\SubjectScheduleEntry.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T08:11:23.957Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "E:\\APPSDEV\\zospro\\Enrollment System\\MainForm.cs",
+              "RelativeDocumentMoniker": "Enrollment System\\MainForm.cs",
+              "ToolTip": "E:\\APPSDEV\\zospro\\Enrollment System\\MainForm.cs [Design]",
+              "RelativeToolTip": "Enrollment System\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T08:11:20.439Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StudentEnrollmentEntry.cs [Design]",
+              "DocumentMoniker": "E:\\APPSDEV\\zospro\\Enrollment System\\StudentEnrollmentEntry.cs",
+              "RelativeDocumentMoniker": "Enrollment System\\StudentEnrollmentEntry.cs",
+              "ToolTip": "E:\\APPSDEV\\zospro\\Enrollment System\\StudentEnrollmentEntry.cs [Design]",
+              "RelativeToolTip": "Enrollment System\\StudentEnrollmentEntry.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T08:11:23.167Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

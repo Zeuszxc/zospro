@@ -18,7 +18,7 @@ namespace Enrollment_System
             InitializeComponent();
         }
 
-        string connectionString = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = \\Server2\second semester 2023-2024\LAB802\79866_CC_APPSDEV22_1200_0130_PM_TTH\79866-23232127\Desktop\FINALS\Enrollment System\Caballes.accdb";
+        string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\APPSDEV\zospro-main\Caballes.accdb";
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
@@ -93,6 +93,36 @@ namespace Enrollment_System
                     SubjectDataGridView.Rows[index].Cells["UnitsColumn"].Value = units;
                 }
             }
+        }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            SubjCodeTextBox.Text = "";
+            DescriptionTextBox.Text = "";
+            UnitsTextBox.Text = "";
+            CategoryComboBox.Text = "";
+            OfferingComboBox.Text = "";
+            CourseCodeComboBox.Text = "";
+            CurriculumCodeTextBox.Text = "";
+        }
+
+        private void RequisiteTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            SubjectScheduleEntry subjectScheduleEntry = new SubjectScheduleEntry();
+            subjectScheduleEntry.Show();
+            this.Hide();
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
+            this.Hide();
         }
     }
 }
