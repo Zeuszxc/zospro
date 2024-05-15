@@ -172,7 +172,7 @@
             // SubjectEDPCodeTextBox
             // 
             this.SubjectEDPCodeTextBox.Location = new System.Drawing.Point(172, 32);
-            this.SubjectEDPCodeTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SubjectEDPCodeTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.SubjectEDPCodeTextBox.Name = "SubjectEDPCodeTextBox";
             this.SubjectEDPCodeTextBox.Size = new System.Drawing.Size(116, 23);
             this.SubjectEDPCodeTextBox.TabIndex = 10;
@@ -180,15 +180,16 @@
             // SubjectCodeTextBox
             // 
             this.SubjectCodeTextBox.Location = new System.Drawing.Point(172, 79);
-            this.SubjectCodeTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SubjectCodeTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.SubjectCodeTextBox.Name = "SubjectCodeTextBox";
             this.SubjectCodeTextBox.Size = new System.Drawing.Size(116, 23);
             this.SubjectCodeTextBox.TabIndex = 11;
+            this.SubjectCodeTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SubjectCodeTextBox_KeyPress);
             // 
             // TimeStartTextBox
             // 
             this.TimeStartTextBox.Location = new System.Drawing.Point(172, 173);
-            this.TimeStartTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TimeStartTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.TimeStartTextBox.Name = "TimeStartTextBox";
             this.TimeStartTextBox.Size = new System.Drawing.Size(116, 23);
             this.TimeStartTextBox.TabIndex = 13;
@@ -196,7 +197,7 @@
             // TimeEndTextBox
             // 
             this.TimeEndTextBox.Location = new System.Drawing.Point(172, 215);
-            this.TimeEndTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TimeEndTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.TimeEndTextBox.Name = "TimeEndTextBox";
             this.TimeEndTextBox.Size = new System.Drawing.Size(116, 23);
             this.TimeEndTextBox.TabIndex = 14;
@@ -204,7 +205,7 @@
             // DaysTextBox
             // 
             this.DaysTextBox.Location = new System.Drawing.Point(491, 38);
-            this.DaysTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DaysTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.DaysTextBox.Name = "DaysTextBox";
             this.DaysTextBox.Size = new System.Drawing.Size(116, 23);
             this.DaysTextBox.TabIndex = 15;
@@ -212,7 +213,7 @@
             // SectionTextBox
             // 
             this.SectionTextBox.Location = new System.Drawing.Point(491, 83);
-            this.SectionTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SectionTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.SectionTextBox.Name = "SectionTextBox";
             this.SectionTextBox.Size = new System.Drawing.Size(116, 23);
             this.SectionTextBox.TabIndex = 16;
@@ -220,7 +221,7 @@
             // RoomTextBox
             // 
             this.RoomTextBox.Location = new System.Drawing.Point(491, 131);
-            this.RoomTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RoomTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.RoomTextBox.Name = "RoomTextBox";
             this.RoomTextBox.Size = new System.Drawing.Size(116, 23);
             this.RoomTextBox.TabIndex = 17;
@@ -228,19 +229,19 @@
             // SchoolYearTextBox
             // 
             this.SchoolYearTextBox.Location = new System.Drawing.Point(491, 173);
-            this.SchoolYearTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SchoolYearTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.SchoolYearTextBox.Name = "SchoolYearTextBox";
             this.SchoolYearTextBox.Size = new System.Drawing.Size(116, 23);
             this.SchoolYearTextBox.TabIndex = 18;
             // 
             // AMPMComboBox
             // 
-            this.AMPMComboBox.AutoCompleteCustomSource.AddRange(new string[] {
+            this.AMPMComboBox.FormattingEnabled = true;
+            this.AMPMComboBox.Items.AddRange(new object[] {
             "AM",
             "PM"});
-            this.AMPMComboBox.FormattingEnabled = true;
             this.AMPMComboBox.Location = new System.Drawing.Point(491, 215);
-            this.AMPMComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AMPMComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.AMPMComboBox.Name = "AMPMComboBox";
             this.AMPMComboBox.Size = new System.Drawing.Size(140, 25);
             this.AMPMComboBox.TabIndex = 19;
@@ -257,8 +258,8 @@
             // 
             // SaveButton
             // 
-            this.SaveButton.Location = new System.Drawing.Point(340, 472);
-            this.SaveButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SaveButton.Location = new System.Drawing.Point(352, 459);
+            this.SaveButton.Margin = new System.Windows.Forms.Padding(4);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(90, 42);
             this.SaveButton.TabIndex = 21;
@@ -268,18 +269,19 @@
             // 
             // ClearButton
             // 
-            this.ClearButton.Location = new System.Drawing.Point(456, 472);
-            this.ClearButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClearButton.Location = new System.Drawing.Point(479, 459);
+            this.ClearButton.Margin = new System.Windows.Forms.Padding(4);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(90, 42);
             this.ClearButton.TabIndex = 22;
             this.ClearButton.Text = "&Clear";
             this.ClearButton.UseVisualStyleBackColor = true;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(704, 472);
-            this.NextButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NextButton.Location = new System.Drawing.Point(763, 519);
+            this.NextButton.Margin = new System.Windows.Forms.Padding(4);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(90, 42);
             this.NextButton.TabIndex = 23;
@@ -289,8 +291,8 @@
             // 
             // BackButton
             // 
-            this.BackButton.Location = new System.Drawing.Point(130, 472);
-            this.BackButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BackButton.Location = new System.Drawing.Point(647, 519);
+            this.BackButton.Margin = new System.Windows.Forms.Padding(4);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(90, 42);
             this.BackButton.TabIndex = 24;
@@ -311,12 +313,13 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Location = new System.Drawing.Point(183, 27);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(204, 27);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(584, 88);
+            this.panel1.Size = new System.Drawing.Size(507, 88);
             this.panel1.TabIndex = 26;
             // 
             // panel2
@@ -361,7 +364,7 @@
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.SaveButton);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SubjectScheduleEntry";
             this.Text = "SubjectScheduleEntry";
             this.panel1.ResumeLayout(false);

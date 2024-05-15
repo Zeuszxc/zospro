@@ -12,7 +12,7 @@ namespace Enrollment_System
             InitializeComponent();
         }
 
-        string connectionString = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = E:\APPSDEV\zospro-main\Caballes.accdb";
+        string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\APPSDEV\zospro\Caballes.accdb";
         private void SaveButton_Click(object sender, EventArgs e)
         {
             OleDbConnection thisConnection = new OleDbConnection(connectionString);
@@ -31,7 +31,7 @@ namespace Enrollment_System
             thisRow["SSFDAYS"] = DaysTextBox.Text;
             thisRow["SSFROOM"] = RoomTextBox.Text;
 
-            thisRow["SSFXM"] = AMPMComboBox.Text.Substring(0,2);
+            thisRow["SSFXM"] = AMPMComboBox.Text.Substring(0, 2);
             thisRow["SSFSECTION"] = SectionTextBox.Text;
             thisRow["SSFSCHOOLYEAR"] = SchoolYearTextBox.Text;
 
@@ -54,6 +54,60 @@ namespace Enrollment_System
             Form1 form1 = new Form1();
             form1.Show();
             this.Hide();
+        }
+
+        private void SubjectCodeTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                OleDbConnection thisConnection = new OleDbConnection(connectionString);
+                thisConnection.Open();
+                OleDbCommand thisCommand = thisConnection.CreateCommand();
+
+                string sql = "SELECT * FROM SUBJECTFILE";
+                thisCommand.CommandText = sql;
+
+                OleDbDataReader thisDataReader = thisCommand.ExecuteReader();
+
+                bool found = false;
+                string description = "";
+
+                while (thisDataReader.Read())
+                {
+                    if (thisDataReader["SFSUBJCODE"].ToString().Trim().ToUpper() == SubjectCodeTextBox.Text.Trim().ToUpper());
+                    {
+                        found = true;
+
+                        description = thisDataReader["SFSUBJDESC"].ToString();
+                        break;
+                    }
+                }
+
+                if (found == false)
+                
+                    MessageBox.Show("Subject Code Not Found");
+                else
+                {
+                    DescriptionLabel.Text = description;
+                }
+                
+
+            }
+        }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            SubjectEDPCodeTextBox.Text = "";
+            SubjectCodeTextBox.Text = "";
+            DescriptionLabel.Text = "";
+            TimeStartTextBox.Text = "";
+            TimeEndTextBox.Text = "";
+            DaysTextBox.Text = "";
+            SectionTextBox.Text = "";
+            RoomTextBox.Text = "";
+            SchoolYearTextBox.Text = "";
+            AMPMComboBox.Text = "";
+
         }
     }
 }

@@ -25,3 +25,16 @@ E:\APPSDEV\zospro-main\Enrollment System\obj\Debug\Enrollment System.csproj.Gene
 E:\APPSDEV\zospro-main\Enrollment System\obj\Debug\Enrollment System.csproj.CoreCompileInputs.cache
 E:\APPSDEV\zospro-main\Enrollment System\obj\Debug\Enrollment System.exe
 E:\APPSDEV\zospro-main\Enrollment System\obj\Debug\Enrollment System.pdb
+E:\APPSDEV\zospro\Enrollment System\bin\Debug\Enrollment System.exe.config
+E:\APPSDEV\zospro\Enrollment System\bin\Debug\Enrollment System.exe
+E:\APPSDEV\zospro\Enrollment System\bin\Debug\Enrollment System.pdb
+E:\APPSDEV\zospro\Enrollment System\obj\Debug\Enrollment System.csproj.AssemblyReference.cache
+E:\APPSDEV\zospro\Enrollment System\obj\Debug\Enrollment_System.Form1.resources
+E:\APPSDEV\zospro\Enrollment System\obj\Debug\Enrollment_System.MainForm.resources
+E:\APPSDEV\zospro\Enrollment System\obj\Debug\Enrollment_System.Properties.Resources.resources
+E:\APPSDEV\zospro\Enrollment System\obj\Debug\Enrollment_System.StudentEnrollmentEntry.resources
+E:\APPSDEV\zospro\Enrollment System\obj\Debug\Enrollment_System.SubjectScheduleEntry.resources
+E:\APPSDEV\zospro\Enrollment System\obj\Debug\Enrollment System.csproj.GenerateResource.cache
+E:\APPSDEV\zospro\Enrollment System\obj\Debug\Enrollment System.csproj.CoreCompileInputs.cache
+E:\APPSDEV\zospro\Enrollment System\obj\Debug\Enrollment System.exe
+E:\APPSDEV\zospro\Enrollment System\obj\Debug\Enrollment System.pdb

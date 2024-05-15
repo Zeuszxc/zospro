@@ -43,7 +43,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.SaveButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.PreRequisiteRadioButton = new System.Windows.Forms.RadioButton();
@@ -59,6 +58,7 @@
             this.BackButton = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.SaveButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SubjectDataGridView)).BeginInit();
@@ -85,11 +85,10 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(53, 92);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(533, 224);
+            this.groupBox1.Size = new System.Drawing.Size(547, 224);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Subject Entry Form";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // CurriculumCodeTextBox
             // 
@@ -236,21 +235,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Subject Code:";
             // 
-            // SaveButton
-            // 
-            this.SaveButton.Location = new System.Drawing.Point(643, 277);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(75, 28);
-            this.SaveButton.TabIndex = 14;
-            this.SaveButton.Text = "&Save";
-            this.SaveButton.UseVisualStyleBackColor = true;
-            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
-            // 
             // ClearButton
             // 
-            this.ClearButton.Location = new System.Drawing.Point(643, 322);
+            this.ClearButton.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClearButton.Location = new System.Drawing.Point(643, 364);
             this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(75, 25);
+            this.ClearButton.Size = new System.Drawing.Size(90, 41);
             this.ClearButton.TabIndex = 15;
             this.ClearButton.Text = "&Clear";
             this.ClearButton.UseVisualStyleBackColor = true;
@@ -267,7 +257,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(53, 322);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(533, 259);
+            this.groupBox2.Size = new System.Drawing.Size(547, 259);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Requisite Information";
@@ -302,7 +292,6 @@
             this.RequisiteTextBox.Name = "RequisiteTextBox";
             this.RequisiteTextBox.Size = new System.Drawing.Size(106, 22);
             this.RequisiteTextBox.TabIndex = 2;
-            this.RequisiteTextBox.TextChanged += new System.EventHandler(this.RequisiteTextBox_TextChanged);
             this.RequisiteTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RequisiteTextBox_KeyPress);
             // 
             // label8
@@ -327,7 +316,7 @@
             this.SubjectDataGridView.Location = new System.Drawing.Point(21, 65);
             this.SubjectDataGridView.Name = "SubjectDataGridView";
             this.SubjectDataGridView.RowHeadersVisible = false;
-            this.SubjectDataGridView.Size = new System.Drawing.Size(494, 179);
+            this.SubjectDataGridView.Size = new System.Drawing.Size(512, 179);
             this.SubjectDataGridView.TabIndex = 0;
             // 
             // SubjectCodeColumn
@@ -356,9 +345,10 @@
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(730, 557);
+            this.NextButton.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextButton.Location = new System.Drawing.Point(715, 539);
             this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(75, 25);
+            this.NextButton.Size = new System.Drawing.Size(90, 42);
             this.NextButton.TabIndex = 17;
             this.NextButton.Text = "&Next";
             this.NextButton.UseVisualStyleBackColor = true;
@@ -366,9 +356,10 @@
             // 
             // BackButton
             // 
-            this.BackButton.Location = new System.Drawing.Point(643, 558);
+            this.BackButton.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackButton.Location = new System.Drawing.Point(619, 540);
             this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(75, 23);
+            this.BackButton.Size = new System.Drawing.Size(90, 41);
             this.BackButton.TabIndex = 18;
             this.BackButton.Text = "&Back";
             this.BackButton.UseVisualStyleBackColor = true;
@@ -386,7 +377,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.label11);
             this.panel1.Location = new System.Drawing.Point(257, 12);
@@ -394,18 +385,30 @@
             this.panel1.Size = new System.Drawing.Size(329, 65);
             this.panel1.TabIndex = 27;
             // 
+            // SaveButton
+            // 
+            this.SaveButton.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveButton.Location = new System.Drawing.Point(643, 288);
+            this.SaveButton.Margin = new System.Windows.Forms.Padding(4);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(90, 42);
+            this.SaveButton.TabIndex = 28;
+            this.SaveButton.Text = "&Save";
+            this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(827, 606);
+            this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.ClearButton);
-            this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -437,7 +440,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Button ClearButton;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView SubjectDataGridView;
@@ -453,6 +455,7 @@
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button SaveButton;
     }
 }
 
