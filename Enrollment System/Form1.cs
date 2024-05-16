@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
 
 namespace Enrollment_System
@@ -18,7 +19,8 @@ namespace Enrollment_System
             InitializeComponent();
         }
 
-        string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\APPSDEV\zospro\Caballes.accdb";
+        string connectionString = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = D:\ZEUSSSS\zospro-main\Caballes.accdb";
+        //@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\APPSDEV\zospro\Caballes.accdb";
 
         private void RequisiteTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -28,20 +30,28 @@ namespace Enrollment_System
                 thisConnection.Open();
                 OleDbCommand thisCommand = thisConnection.CreateCommand();
 
+                OleDbCommand thisCommandPreq = thisConnection.CreateCommand();
+                string sqlP = "SELECT * FROM SUBJECTPREQFILE";
+                thisCommandPreq.CommandText = sqlP;
+
                 string sql = "SELECT * FROM SUBJECTFILE";
                 thisCommand.CommandText = sql;
 
                 OleDbDataReader thisDataReader = thisCommand.ExecuteReader();
+                OleDbDataReader thisDataReaderP = thisCommandPreq.ExecuteReader();
+
 
                 bool found = false;
                 string subjectCode = "";
                 string description = "";
                 string units = "";
+                string requisite = "";
 
                 while (thisDataReader.Read())
                 {
                     // MessageBox.Show(thisDataReader["SFSUBJCODE"].ToString());
                     if (thisDataReader["SFSUBJCODE"].ToString().Trim().ToUpper() == RequisiteTextBox.Text.Trim().ToUpper())
+                        
                     {
                         found = true;
                         subjectCode = thisDataReader["SFSUBJCODE"].ToString();
@@ -51,6 +61,12 @@ namespace Enrollment_System
                         //
                     }
 
+                }
+                while (thisDataReaderP.Read()) {
+                    if ((thisDataReaderP["SUBJCODE"].ToString().Trim().ToUpper() == RequisiteTextBox.Text.Trim().ToUpper())) { 
+                        requisite = thisDataReaderP["SUBJPRECODE"].ToString();
+                        break;
+                    }
                 }
 
                 int index;
@@ -62,6 +78,8 @@ namespace Enrollment_System
                     SubjectDataGridView.Rows[index].Cells["SubjectCodeColumn"].Value = subjectCode;
                     SubjectDataGridView.Rows[index].Cells["DescriptionColumn"].Value = description;
                     SubjectDataGridView.Rows[index].Cells["UnitsColumn"].Value = units;
+                    SubjectDataGridView.Rows[index].Cells["CoPreColumn"].Value = requisite;
+
                 }
             }
         }
@@ -94,17 +112,16 @@ namespace Enrollment_System
         private void SaveButton_Click_1(object sender, EventArgs e)
         {
             OleDbConnection thisConnection = new OleDbConnection(connectionString);
-            string sql = "SELECT * FROM SUBJECTFILE";
-            OleDbDataAdapter thisAdapter = new OleDbDataAdapter(sql, thisConnection);
+            string Ole = "SELECT * FROM SubjectFile";
+            OleDbDataAdapter thisAdapter = new OleDbDataAdapter(Ole, thisConnection);
             OleDbCommandBuilder thisBuilder = new OleDbCommandBuilder(thisAdapter);
-
             DataSet thisDataSet = new DataSet();
-
             thisAdapter.MissingSchemaAction = MissingSchemaAction.AddWithKey;
             thisAdapter.Fill(thisDataSet, "SubjectFile");
 
-            DataRow findRow = thisDataSet.Tables["SubjectFile"].NewRow();
-            if (findRow == null)
+            DataRow findRow = thisDataSet.Tables["SubjectFile"].Rows.Find(SubjCodeTextBox.Text);
+
+            if (findRow==null)
             {
                 DataRow thisRow = thisDataSet.Tables["SubjectFile"].NewRow();
                 thisRow["SFSUBJCODE"] = SubjCodeTextBox.Text;
@@ -116,59 +133,45 @@ namespace Enrollment_System
                 thisRow["SFSUBJCOURSECODE"] = CourseCodeComboBox.Text;
                 thisRow["SFSUBJCURRCODE"] = CurriculumCodeTextBox.Text;
 
-
                 thisDataSet.Tables["SubjectFile"].Rows.Add(thisRow);
                 thisAdapter.Update(thisDataSet, "SubjectFile");
 
                 //SAVE DATA TO SUBJPREQFILE//
 
-                //--------------------- NEW DATABASE-------------------------------\\
+                thisConnection = new OleDbConnection(connectionString);
+                Ole = "SELECT * FROM SUBJECTPREQFILE";
+                thisAdapter = new OleDbDataAdapter(Ole, thisConnection);
+                thisBuilder = new OleDbCommandBuilder(thisAdapter);
+                thisDataSet = new DataSet();
+                thisAdapter.Fill(thisDataSet, "SubjectPreqFile");
 
-                OleDbConnection RequisiteConnection = new OleDbConnection(connectionString);
-                string requisite = "SELECT * FROM SUBJECTPREQFILE";
-                OleDbDataAdapter requisiteAdapter = new OleDbDataAdapter(requisite, RequisiteConnection);
-                OleDbCommandBuilder RequisiteCB = new OleDbCommandBuilder(requisiteAdapter);
+                thisRow = thisDataSet.Tables["SubjectPreqFile"].NewRow();
 
-                requisiteAdapter.Fill(thisDataSet, "SUBJECTPREQFILE");
-
-                DataColumn[] subjectPreqKeys = new DataColumn[2];
-                subjectPreqKeys[0] = thisDataSet.Tables["SUBJECTPREQFILE"].Columns["SUBJCODE"];
-                subjectPreqKeys[1] = thisDataSet.Tables["SUBJECTPREQFILE"].Columns["SUBJPRECODE"];
-                thisDataSet.Tables["SUBJECTPREQFILE"].PrimaryKey = subjectPreqKeys;
-
-                string[] valuesToSearch = new string[2];
-                valuesToSearch[0] = SubjCodeTextBox.Text;
-                valuesToSearch[1] = RequisiteTextBox.Text;
-
-                DataRow findRequisiteRow = thisDataSet.Tables["SUBJECTPREQFILE"].Rows.Find(valuesToSearch);
-
-                if (findRequisiteRow == null)
+                if (RequisiteTextBox.Text != string.Empty)
                 {
-                    DataRow thisRequisite = thisDataSet.Tables["SUBJECTPREQFILE"].NewRow();
-                    thisRequisite["SUBJCODE"] = SubjCodeTextBox.Text;
-
+                    thisRow["SUBJCODE"] = SubjCodeTextBox.Text;
+                    thisRow["SUBJPRECODE"] = RequisiteTextBox.Text;
                     if (PreRequisiteRadioButton.Checked == true)
                     {
-                        thisRequisite["SUBJPRECODE"] = RequisiteTextBox.Text;
-                        thisRequisite["SUBJCATEGORY"] = "PR";
+                        thisRow["SUBJPRECATEGORY"] = "PR";
                     }
+
                     else if (CoRequisiteRadioButton.Checked == true)
                     {
-                        thisRequisite["SUBJCATEGORY"] = "CO";
+                        thisRow["SUBJPRECATEGORY"] = "CR";
                     }
-                
-                    MessageBox.Show("Entries Recorded!");
+
+                    thisDataSet.Tables["SubjectPreqFile"].Rows.Add(thisRow);
+                    thisAdapter.Update(thisDataSet, "SubjectPreqFile");
                 }
 
-                //thisDataSet.Tables["SUBJECTPREQ"].Rows.Add(thisRequisite);
-                //requisiteAdapter.Update(thisDataSet, "SUBJECTPREQ");
-                 
+                MessageBox.Show("RECORDED");
             }
-            else
-            {
-                MessageBox.Show("Duplicate Entries!");
-            }   
+            else {
+                MessageBox.Show("Duplicate Entry!");
+            }
 
+            
 
 
             //OleDbConnection requisiteConnection = new OleDbConnection(connectionString);
