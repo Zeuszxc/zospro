@@ -11,24 +11,24 @@
       "RelativeMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|solutionrelative:enrollment system\\studentenrollmententry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|E:\\APPSDEV\\zospro\\enrollment system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|solutionrelative:enrollment system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|E:\\APPSDEV\\zospro\\enrollment system\\studentenrollmententry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|solutionrelative:enrollment system\\studentenrollmententry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|E:\\APPSDEV\\zospro\\enrollment system\\subjectscheduleentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|solutionrelative:enrollment system\\subjectscheduleentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|E:\\APPSDEV\\zospro\\enrollment system\\subjectscheduleentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|solutionrelative:enrollment system\\subjectscheduleentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|E:\\APPSDEV\\zospro\\enrollment system\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|solutionrelative:enrollment system\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|E:\\APPSDEV\\zospro\\enrollment system\\studentenrollmententry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|solutionrelative:enrollment system\\studentenrollmententry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|E:\\APPSDEV\\zospro\\enrollment system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|solutionrelative:enrollment system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|E:\\APPSDEV\\zospro\\enrollment system\\subjectscheduleentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|solutionrelative:enrollment system\\subjectscheduleentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9353B429-AEA9-4C6B-9B07-83B3BF7E1D4E}|Enrollment System\\Enrollment System.csproj|E:\\APPSDEV\\zospro\\enrollment system\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,13 +46,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "StudentEnrollmentEntry.cs",
               "DocumentMoniker": "E:\\APPSDEV\\zospro\\Enrollment System\\StudentEnrollmentEntry.cs",
               "RelativeDocumentMoniker": "Enrollment System\\StudentEnrollmentEntry.cs",
               "ToolTip": "E:\\APPSDEV\\zospro\\Enrollment System\\StudentEnrollmentEntry.cs",
               "RelativeToolTip": "Enrollment System\\StudentEnrollmentEntry.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAIwEYAAAARAAAA",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAQwJoAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T13:38:23.715Z",
               "EditorCaption": ""
@@ -77,14 +77,14 @@
               "RelativeDocumentMoniker": "Enrollment System\\Form1.cs",
               "ToolTip": "E:\\APPSDEV\\zospro\\Enrollment System\\Form1.cs",
               "RelativeToolTip": "Enrollment System\\Form1.cs",
-              "ViewState": "AQIAAHoAAAAAAAAAAAAAAIoAAAA5AAAA",
+              "ViewState": "AQIAAE8AAAAAAAAAAAA1wFYAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T08:37:12.672Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "E:\\APPSDEV\\zospro\\Enrollment System\\Form1.cs",
               "RelativeDocumentMoniker": "Enrollment System\\Form1.cs",
@@ -96,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "E:\\APPSDEV\\zospro\\Enrollment System\\MainForm.cs",
               "RelativeDocumentMoniker": "Enrollment System\\MainForm.cs",
@@ -108,20 +108,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "SubjectScheduleEntry.cs",
               "DocumentMoniker": "E:\\APPSDEV\\zospro\\Enrollment System\\SubjectScheduleEntry.cs",
               "RelativeDocumentMoniker": "Enrollment System\\SubjectScheduleEntry.cs",
               "ToolTip": "E:\\APPSDEV\\zospro\\Enrollment System\\SubjectScheduleEntry.cs",
               "RelativeToolTip": "Enrollment System\\SubjectScheduleEntry.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAQwFsAAAARAAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAQwEMAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T08:11:46.772Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "SubjectScheduleEntry.cs [Design]",
               "DocumentMoniker": "E:\\APPSDEV\\zospro\\Enrollment System\\SubjectScheduleEntry.cs",
               "RelativeDocumentMoniker": "Enrollment System\\SubjectScheduleEntry.cs",

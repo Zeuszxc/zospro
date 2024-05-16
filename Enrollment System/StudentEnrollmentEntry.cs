@@ -105,16 +105,69 @@ namespace Enrollment_System
         int totalUnits = 0;
         private void EDPCodeTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == (char)Keys.Enter)
-            {
+                if (e.KeyChar == (char)Keys.Enter)
+                {
+                    OleDbConnection thisConnection = new OleDbConnection(connectionString);
+                    thisConnection.Open();
+                    OleDbCommand thisCommand = thisConnection.CreateCommand();
 
-                //  OleDbCommand command = new OleDbCommand();
-                //  command.CommandText = "Select * from SubjectFile where SFSUBJCODE= Textbox +" " ";
-                MessageBox.Show("Test");
-                int row = SubjectDataGridView.Rows.Add();
-                int units = Convert.ToInt16(SubjectDataGridView.Rows[row].Cells["UnitsColumn"].Value);
-                totalUnits = totalUnits + units;
-            }
+                    string sql = "SELECT * FROM SUBJECTSCHEDFILE";
+                    thisCommand.CommandText = sql;
+
+                    OleDbDataReader thisDataReader = thisCommand.ExecuteReader();
+
+                    bool found = false;
+                    string edp = "";
+                    string subject = "";
+                    string start = "";
+                    string end = "";
+                    string days = "";
+                    string room = "";
+                    string max = "";
+                    string size = "";
+                    string status = "";
+                    string fxm = "";
+                    string section = "";
+                    string school = "";
+
+                    while (thisDataReader.Read())
+                    {
+                        //MessageBox.Show(thisDataReader["SSFEDPCODE"].ToString());
+                        if (thisDataReader["SSFEDPCODE"].ToString().Trim().ToUpper() == EDPCodeTextBox.Text.Trim().ToUpper())
+                        {
+                            found = true;
+                            edp = thisDataReader["SSFEDPCODE"].ToString();
+                            subject = thisDataReader["SSFSUBJCODE"].ToString();
+                            start = thisDataReader["SSFSTARTTIME"].ToString();
+                            end = thisDataReader["SSFENDTIME"].ToString();
+                            days = thisDataReader["SSFDAYS"].ToString();
+                            room = thisDataReader["SSFROOM"].ToString();
+                            max = thisDataReader["SSFMAXSIZE"].ToString();
+                            size = thisDataReader["SSFCLASSSIZE"].ToString();
+                            status = thisDataReader["SSFSTATUS"].ToString();
+                            fxm = thisDataReader["SSFXM"].ToString();
+                            section = thisDataReader["SSFSECTION"].ToString();
+                            school = thisDataReader["SSFSCHOOLYEAR"].ToString();
+                            break;
+                            //
+                        }
+
+                    }
+                int row, units;
+                    if (found == false)
+                {
+                    row = SubjectDataGridView.Rows.Add();
+                    units = Convert.ToInt16(SubjectDataGridView.Rows[row].Cells["UnitsColumn"].Value);
+                    totalUnits = totalUnits + units;
+                }
+   
+                    else
+                    {
+                        
+                    MessageBox.Show("Subject Code Not Found");
+                }
+
+                }     
         }
     }
 }
