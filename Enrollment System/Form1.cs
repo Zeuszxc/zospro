@@ -19,8 +19,8 @@ namespace Enrollment_System
             InitializeComponent();
         }
 
-        string connectionString = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = D:\ZEUSSSS\zospro-main\Caballes.accdb";
-        //@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\APPSDEV\zospro\Caballes.accdb";
+        string connectionString = //@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = D:\ZEUSSSS\zospro-main\Caballes.accdb";
+        @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\ZEUSSSS\zospro-main\Caballes.accdb";
 
         private void RequisiteTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -93,6 +93,7 @@ namespace Enrollment_System
             OfferingComboBox.Text = "";
             CourseCodeComboBox.Text = "";
             CurriculumCodeTextBox.Text = "";
+            RequisiteTextBox.Text = "";
         }
 
         private void NextButton_Click(object sender, EventArgs e)
@@ -105,8 +106,9 @@ namespace Enrollment_System
         private void BackButton_Click(object sender, EventArgs e)
         {
             MainForm mainForm = new MainForm();
-            mainForm.Show();
             this.Hide();
+            mainForm.Show();
+          
         }
 
         private void SaveButton_Click_1(object sender, EventArgs e)

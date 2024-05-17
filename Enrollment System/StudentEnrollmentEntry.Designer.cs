@@ -36,6 +36,13 @@
             this.EDPCodeTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.SubjectDataGridView = new System.Windows.Forms.DataGridView();
+            this.EDPCodeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SubjectCodeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StartTimeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EndTimeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DaysColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RoomColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UnitsColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EncodedByTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.TotalUnitsTextBox = new System.Windows.Forms.TextBox();
@@ -51,13 +58,7 @@
             this.DateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.SaveButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
-            this.EDPCodeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SubjectCodeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StartTimeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EndTimeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DaysColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RoomColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UnitsColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ExitLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.SubjectDataGridView)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -146,6 +147,48 @@
             this.SubjectDataGridView.Size = new System.Drawing.Size(750, 117);
             this.SubjectDataGridView.TabIndex = 10;
             // 
+            // EDPCodeColumn
+            // 
+            this.EDPCodeColumn.HeaderText = "EDP Code";
+            this.EDPCodeColumn.Name = "EDPCodeColumn";
+            this.EDPCodeColumn.ReadOnly = true;
+            // 
+            // SubjectCodeColumn
+            // 
+            this.SubjectCodeColumn.HeaderText = "Subject Code";
+            this.SubjectCodeColumn.Name = "SubjectCodeColumn";
+            this.SubjectCodeColumn.ReadOnly = true;
+            // 
+            // StartTimeColumn
+            // 
+            this.StartTimeColumn.HeaderText = "Start Time";
+            this.StartTimeColumn.Name = "StartTimeColumn";
+            this.StartTimeColumn.ReadOnly = true;
+            // 
+            // EndTimeColumn
+            // 
+            this.EndTimeColumn.HeaderText = "End Time";
+            this.EndTimeColumn.Name = "EndTimeColumn";
+            this.EndTimeColumn.ReadOnly = true;
+            // 
+            // DaysColumn
+            // 
+            this.DaysColumn.HeaderText = "Days";
+            this.DaysColumn.Name = "DaysColumn";
+            this.DaysColumn.ReadOnly = true;
+            // 
+            // RoomColumn
+            // 
+            this.RoomColumn.HeaderText = "Room";
+            this.RoomColumn.Name = "RoomColumn";
+            this.RoomColumn.ReadOnly = true;
+            // 
+            // UnitsColumn
+            // 
+            this.UnitsColumn.HeaderText = "Units";
+            this.UnitsColumn.Name = "UnitsColumn";
+            this.UnitsColumn.ReadOnly = true;
+            // 
             // EncodedByTextBox
             // 
             this.EncodedByTextBox.Location = new System.Drawing.Point(82, 304);
@@ -185,7 +228,7 @@
             // BackButton
             // 
             this.BackButton.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackButton.Location = new System.Drawing.Point(618, 498);
+            this.BackButton.Location = new System.Drawing.Point(582, 498);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(90, 34);
             this.BackButton.TabIndex = 15;
@@ -286,7 +329,7 @@
             // SaveButton
             // 
             this.SaveButton.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveButton.Location = new System.Drawing.Point(309, 442);
+            this.SaveButton.Location = new System.Drawing.Point(283, 444);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(4);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(90, 32);
@@ -298,61 +341,35 @@
             // ClearButton
             // 
             this.ClearButton.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClearButton.Location = new System.Drawing.Point(453, 442);
+            this.ClearButton.Location = new System.Drawing.Point(438, 444);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(90, 34);
             this.ClearButton.TabIndex = 32;
             this.ClearButton.Text = "&Clear";
             this.ClearButton.UseVisualStyleBackColor = true;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
-            // EDPCodeColumn
+            // ExitLabel
             // 
-            this.EDPCodeColumn.HeaderText = "EDP Code";
-            this.EDPCodeColumn.Name = "EDPCodeColumn";
-            this.EDPCodeColumn.ReadOnly = true;
-            // 
-            // SubjectCodeColumn
-            // 
-            this.SubjectCodeColumn.HeaderText = "Subject Code";
-            this.SubjectCodeColumn.Name = "SubjectCodeColumn";
-            this.SubjectCodeColumn.ReadOnly = true;
-            // 
-            // StartTimeColumn
-            // 
-            this.StartTimeColumn.HeaderText = "Start Time";
-            this.StartTimeColumn.Name = "StartTimeColumn";
-            this.StartTimeColumn.ReadOnly = true;
-            // 
-            // EndTimeColumn
-            // 
-            this.EndTimeColumn.HeaderText = "End Time";
-            this.EndTimeColumn.Name = "EndTimeColumn";
-            this.EndTimeColumn.ReadOnly = true;
-            // 
-            // DaysColumn
-            // 
-            this.DaysColumn.HeaderText = "Days";
-            this.DaysColumn.Name = "DaysColumn";
-            this.DaysColumn.ReadOnly = true;
-            // 
-            // RoomColumn
-            // 
-            this.RoomColumn.HeaderText = "Room";
-            this.RoomColumn.Name = "RoomColumn";
-            this.RoomColumn.ReadOnly = true;
-            // 
-            // UnitsColumn
-            // 
-            this.UnitsColumn.HeaderText = "Units";
-            this.UnitsColumn.Name = "UnitsColumn";
-            this.UnitsColumn.ReadOnly = true;
+            this.ExitLabel.AutoSize = true;
+            this.ExitLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.ExitLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ExitLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitLabel.Location = new System.Drawing.Point(783, 14);
+            this.ExitLabel.Name = "ExitLabel";
+            this.ExitLabel.Size = new System.Drawing.Size(54, 24);
+            this.ExitLabel.TabIndex = 20;
+            this.ExitLabel.Text = "EXIT";
+            this.ExitLabel.Click += new System.EventHandler(this.ExitLabel_Click);
             // 
             // StudentEnrollmentEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(838, 544);
+            this.ClientSize = new System.Drawing.Size(849, 544);
+            this.ControlBox = false;
+            this.Controls.Add(this.ExitLabel);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.panel2);
@@ -366,6 +383,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -401,5 +419,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DaysColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn UnitsColumn;
+        private System.Windows.Forms.Label ExitLabel;
     }
 }

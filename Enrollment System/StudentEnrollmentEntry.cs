@@ -18,7 +18,7 @@ namespace Enrollment_System
             InitializeComponent();
         }
 
-        string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=E:\APPSDEV\zospro\Caballes.accdb";
+        string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\ZEUSSSS\zospro-main\Caballes.accdb";
 
         private void BackButton_Click(object sender, EventArgs e)
         {
@@ -168,6 +168,19 @@ namespace Enrollment_System
                 }
 
                 }     
+        }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            IDNumberTextBox.Text = "";
+            NameLabel.Text = "";
+            CourseLabel.Text = "";
+            YearLabel.Text = "";
+        }
+
+        private void ExitLabel_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

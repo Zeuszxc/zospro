@@ -40,8 +40,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.SubjectEDPCodeTextBox = new System.Windows.Forms.TextBox();
             this.SubjectCodeTextBox = new System.Windows.Forms.TextBox();
-            this.TimeStartTextBox = new System.Windows.Forms.TextBox();
-            this.TimeEndTextBox = new System.Windows.Forms.TextBox();
             this.DaysTextBox = new System.Windows.Forms.TextBox();
             this.SectionTextBox = new System.Windows.Forms.TextBox();
             this.RoomTextBox = new System.Windows.Forms.TextBox();
@@ -55,6 +53,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.DateTimeEndPicker = new System.Windows.Forms.DateTimePicker();
+            this.DateTimeStartPicker = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -186,22 +186,6 @@
             this.SubjectCodeTextBox.TabIndex = 11;
             this.SubjectCodeTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SubjectCodeTextBox_KeyPress);
             // 
-            // TimeStartTextBox
-            // 
-            this.TimeStartTextBox.Location = new System.Drawing.Point(172, 173);
-            this.TimeStartTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.TimeStartTextBox.Name = "TimeStartTextBox";
-            this.TimeStartTextBox.Size = new System.Drawing.Size(116, 23);
-            this.TimeStartTextBox.TabIndex = 13;
-            // 
-            // TimeEndTextBox
-            // 
-            this.TimeEndTextBox.Location = new System.Drawing.Point(172, 215);
-            this.TimeEndTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.TimeEndTextBox.Name = "TimeEndTextBox";
-            this.TimeEndTextBox.Size = new System.Drawing.Size(116, 23);
-            this.TimeEndTextBox.TabIndex = 14;
-            // 
             // DaysTextBox
             // 
             this.DaysTextBox.Location = new System.Drawing.Point(491, 38);
@@ -326,13 +310,13 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.DateTimeEndPicker);
+            this.panel2.Controls.Add(this.DateTimeStartPicker);
             this.panel2.Controls.Add(this.DaysTextBox);
             this.panel2.Controls.Add(this.SubjectCodeTextBox);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.TimeStartTextBox);
             this.panel2.Controls.Add(this.SubjectEDPCodeTextBox);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.TimeEndTextBox);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label7);
@@ -351,12 +335,29 @@
             this.panel2.Size = new System.Drawing.Size(723, 280);
             this.panel2.TabIndex = 28;
             // 
+            // DateTimeEndPicker
+            // 
+            this.DateTimeEndPicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.DateTimeEndPicker.Location = new System.Drawing.Point(172, 213);
+            this.DateTimeEndPicker.Name = "DateTimeEndPicker";
+            this.DateTimeEndPicker.Size = new System.Drawing.Size(116, 23);
+            this.DateTimeEndPicker.TabIndex = 22;
+            // 
+            // DateTimeStartPicker
+            // 
+            this.DateTimeStartPicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.DateTimeStartPicker.Location = new System.Drawing.Point(172, 173);
+            this.DateTimeStartPicker.Name = "DateTimeStartPicker";
+            this.DateTimeStartPicker.Size = new System.Drawing.Size(116, 23);
+            this.DateTimeStartPicker.TabIndex = 21;
+            // 
             // SubjectScheduleEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(891, 588);
+            this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BackButton);
@@ -389,8 +390,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox SubjectEDPCodeTextBox;
         private System.Windows.Forms.TextBox SubjectCodeTextBox;
-        private System.Windows.Forms.TextBox TimeStartTextBox;
-        private System.Windows.Forms.TextBox TimeEndTextBox;
         private System.Windows.Forms.TextBox DaysTextBox;
         private System.Windows.Forms.TextBox SectionTextBox;
         private System.Windows.Forms.TextBox RoomTextBox;
@@ -404,5 +403,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DateTimePicker DateTimeEndPicker;
+        private System.Windows.Forms.DateTimePicker DateTimeStartPicker;
     }
 }

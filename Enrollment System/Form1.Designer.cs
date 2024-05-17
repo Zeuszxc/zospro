@@ -238,7 +238,7 @@
             // ClearButton
             // 
             this.ClearButton.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClearButton.Location = new System.Drawing.Point(643, 364);
+            this.ClearButton.Location = new System.Drawing.Point(646, 332);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(90, 41);
             this.ClearButton.TabIndex = 15;
@@ -388,7 +388,7 @@
             // SaveButton
             // 
             this.SaveButton.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveButton.Location = new System.Drawing.Point(643, 288);
+            this.SaveButton.Location = new System.Drawing.Point(646, 256);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(4);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(90, 42);
